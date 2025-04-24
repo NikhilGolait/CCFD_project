@@ -1,0 +1,112 @@
+/* Global Styling */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 0;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  /* Theme modes */
+  body.light-mode {
+    background-color: #f5f5f5;
+    color: #333;
+  }
+  
+  body.dark-mode {
+    background-color: #121212;
+    color: #f5f5f5;
+  }
+  
+  /* Container */
+  .container {
+    max-width: 420px;
+    margin: 60px auto;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+  }
+  
+  body.dark-mode .container {
+    background-color: #1e1e1e;
+  }
+  
+  /* Header */
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+  }
+  
+  .header h1 {
+    font-size: 20px;
+    margin: 0;
+  }
+  
+  /* Form */
+  .input-group {
+    margin-bottom: 15px;
+  }
+  
+  label {
+    font-weight: 600;
+    margin-bottom: 5px;
+    display: block;
+  }
+  
+  input {
+    width: 100%;
+    padding: 10px 12px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 15px;
+    outline: none;
+    transition: all 0.2s;
+  }
+  
+  input:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 0 2px rgba(0,123,255,0.15);
+  }
+  
+  body.dark-mode input {
+    background-color: #2d2d2d;
+    color: #fff;
+    border-color: #444;
+  }
+  
+  /* Buttons */
+  button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 12px;
+    border-radius: 6px;
+    font-size: 15px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  .result-box {
+    margin-top: 20px;
+    padding: 15px;
+    border: 2px dashed #888;
+    border-radius: 8px;
+    font-size: 14px;
+    white-space: pre-line;
+    word-wrap: break-word;
+    background-color: #f0f0f0;
+  }
+  
+  body.dark-mode .result-box {
+    background-color: #2b2b2b;
+    border-color: #aaa;
+  }
+  
